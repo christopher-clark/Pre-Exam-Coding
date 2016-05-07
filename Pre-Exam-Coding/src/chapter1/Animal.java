@@ -2,6 +2,7 @@ package chapter1;
 
 public class Animal {
 	String name;
+	Integer size;
 	 
 	Animal(String name) {
 	 this.name = name;

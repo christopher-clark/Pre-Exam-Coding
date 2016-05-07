@@ -1,6 +1,12 @@
 package chapter1;
 
 public class Horse extends Animal{
+	String name;
+	int size;
+	
+	Horse(){
+		System.out.println("no-args Horse constructor");
+	}
 	public void eat() {
 		System.out.println("Horse Eating Hay and Oats");
 	}

@@ -5,7 +5,7 @@ public class Dog extends Animal{
 	int size;
 	
 	Dog(){
-		System.out.println("no-args constructor");
+		System.out.println("no-args Dog constructor");
 	}
 	Dog(String name){
 		this.name = name;

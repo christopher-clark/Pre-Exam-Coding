@@ -1,14 +1,17 @@
-package chapter1;
+package chapter2;
 
 public class Dog extends Animal{
-	String Name;
+	static String [] names = {"Fido", "Mutley", "Elsa", "Tiny", "It"};
+	String name;
 	int size;
 	
 	Dog(){
-		System.out.println("no-args Dog constructor");
+	//	this(assignName());
+	//	System.out.println("no-args Dog constructor name = " +  name);
 	}
 	Dog(String name){
 		this.name = name;
+	//	System.out.println("String Dog constructor name = " +  name);
 	}
 	Dog(int size){
 		this.size = size;
@@ -21,5 +24,8 @@ public class Dog extends Animal{
 	}
 	public void woof() {
 		System.out.println("Woof Woof ");
+	}
+	static String assignName(){
+		return names[(int) (Math.random() * names.length)];
 	}
 }

@@ -6,6 +6,7 @@ public class ComingThru {
 	public static void main(String[] args) {
 		A[] aa = new A[2];
 		B[] ba = new B[2];
+		
 		sifter(aa);
 		sifter(ba);
 		sifter(7);

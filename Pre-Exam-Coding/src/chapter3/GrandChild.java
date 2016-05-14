@@ -16,5 +16,6 @@ public class GrandChild extends Child{
 	public static void main(String[] args){
 		GrandChild gc = new GrandChild();
 		GrandChild gc1 = new GrandChild("peter");
+		System.out.println("creating Parent " + new Parent());
 	}
 }

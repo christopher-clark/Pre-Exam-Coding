@@ -1,13 +1,13 @@
 package chapter2;
 
 public class Animal {
-	String name;
+	public String name;
 	Integer size;
 	 
-	Animal(String name) {
+	public Animal(String name) {
 	 this.name = name;
 	}
-	Animal(){
+	public Animal(){
 		this(makeRandomName());
 	}
 	

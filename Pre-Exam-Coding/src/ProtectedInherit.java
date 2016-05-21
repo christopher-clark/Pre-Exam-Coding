@@ -7,6 +7,6 @@ public class ProtectedInherit extends Protected{
 	}
 	public void dontExtend(){
 		Protected prot = new Protected();
-		System.out.println("Not extended protected var = " + prot.protInst);
+		//System.out.println("Not extended protected var = " + prot.protInst);
 	}
 }

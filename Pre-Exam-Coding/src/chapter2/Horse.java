@@ -4,11 +4,14 @@ public class Horse extends Animal{
 	public String name;
 	int size;
 	
+	static {System.out.println("Static Horse Block");}
+	
 	public Horse(String name) {
-	 this.name = name;
+	 super(name);
 	}
 	public Horse(){
 		this(makeRandomName());
+		System.out.println("Constructing no-arg Horse");
 	}
 		
 	static String makeRandomName() {

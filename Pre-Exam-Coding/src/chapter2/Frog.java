@@ -1,9 +1,12 @@
 package chapter2;
 
-class Frog extends Animal{
+public class Frog extends Animal{
 	static int frogCount = 0; 							// Declare and initialize
-												// instance variable
+														// instance variable
+	static {System.out.println("Static Frog Block");}
+	
 public Frog() {
+	System.out.println("Constructing no-arg Frog");
 	frogCount += 1; 							// Modify the value in the constructor
 }
 public void makeNoise(){

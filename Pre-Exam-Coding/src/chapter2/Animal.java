@@ -3,12 +3,16 @@ package chapter2;
 public class Animal {
 	public String name;
 	Integer size;
+	
+	static {System.out.println("Static Animal Block");}
 	 
 	public Animal(String name) {
 	 this.name = name;
+	 System.out.println("Constructing Animal called " + name);
 	}
 	public Animal(){
 		this(makeRandomName());
+		System.out.println("Constructing no-arg Animal called " + name);
 	}
 	
 	static String makeRandomName() {

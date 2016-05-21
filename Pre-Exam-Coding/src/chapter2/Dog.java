@@ -6,12 +6,12 @@ public class Dog extends Animal{
 	int size;
 	
 	Dog(){
-	//	this(assignName());
-	//	System.out.println("no-args Dog constructor name = " +  name);
+		this(assignName());
+		System.out.println("no-args Dog constructor name = " +  name);
 	}
 	Dog(String name){
 		this.name = name;
-	//	System.out.println("String Dog constructor name = " +  name);
+		System.out.println("String Dog constructor name = " +  name);
 	}
 	Dog(int size){
 		this.size = size;

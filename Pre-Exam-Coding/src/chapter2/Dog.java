@@ -5,6 +5,8 @@ public class Dog extends Animal{
 	String name;
 	int size;
 	
+	{System.out.println("Instance Init Dog Block");}
+	
 	Dog(){
 		this(assignName());
 		System.out.println("no-args Dog constructor name = " +  name);
@@ -27,5 +29,8 @@ public class Dog extends Animal{
 	}
 	static String assignName(){
 		return names[(int) (Math.random() * names.length)];
+	}
+	public String toString(){
+		return ("I am a Dog called " + name);
 	}
 }

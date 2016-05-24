@@ -5,6 +5,7 @@ public class Horse extends Animal{
 	int size;
 	
 	static {System.out.println("Static Horse Block");}
+	{System.out.println("Instance Init Horse Block");}
 	
 	public Horse(String name) {
 	 super(name);
@@ -13,7 +14,9 @@ public class Horse extends Animal{
 		this(makeRandomName());
 		System.out.println("Constructing no-arg Horse");
 	}
-		
+	public String toString(){
+		return ("I am a Horse called " + name);
+	}
 	static String makeRandomName() {
 		 String [] name = {"Black Beauty", "Red Rum","Black Caviar", "Queens Own","Trotter"};
 		 return name[(int) (Math.random() * name.length)];

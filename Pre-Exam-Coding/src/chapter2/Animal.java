@@ -4,8 +4,12 @@ public class Animal {
 	public String name;
 	Integer size;
 	
-	static {System.out.println("Static Animal Block");}
-	 
+	static {System.out.println("Static Init Animal Block");}
+	{System.out.println("Instance Init Animal Block");}
+	
+	public String toString(){
+		return ("I am an Animal called " + name);
+	}
 	public Animal(String name) {
 	 this.name = name;
 	 System.out.println("Constructing Animal called " + name);

@@ -4,6 +4,7 @@ public class Frog extends Animal{
 	static int frogCount = 0; 							// Declare and initialize
 														// instance variable
 	static {System.out.println("Static Frog Block");}
+	{System.out.println("Instance Init Frog Block");}
 	
 public Frog() {
 	System.out.println("Constructing no-arg Frog");
@@ -11,6 +12,9 @@ public Frog() {
 }
 public void makeNoise(){
 	System.out.println("Ribbet Ribbet ");
+}
+public String toString(){
+	return ("I am an Frog called " + name);
 }
 public static void main (String [] args) {
 	new Frog();

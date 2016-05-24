@@ -1,12 +1,28 @@
 package chapter2;
 
 public class Horse extends Animal{
-	String name;
+	public String name;
 	int size;
 	
-	Horse(){
-	//	System.out.println("no-args Horse constructor");
+	static {System.out.println("Static Horse Block");}
+	{System.out.println("Instance Init Horse Block");}
+	
+	public Horse(String name) {
+	 super(name);
 	}
+	public Horse(){
+		this(makeRandomName());
+		System.out.println("Constructing no-arg Horse");
+	}
+	public String toString(){
+		return ("I am a Horse called " + name);
+	}
+	static String makeRandomName() {
+		 String [] name = {"Black Beauty", "Red Rum","Black Caviar", "Queens Own","Trotter"};
+		 return name[(int) (Math.random() * name.length)];
+	}
+	
+	
 	public void eat() {
 		System.out.println("Horse Eating Hay and Oats");
 	}

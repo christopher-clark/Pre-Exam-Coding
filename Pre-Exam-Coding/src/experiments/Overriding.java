@@ -3,15 +3,15 @@ package experiments;
 public class Overriding {
 
 	public static void main(String[] args) {
-		Animal [] kennel = { new Animal(), new Dog(), new Animal()};
+		AnimalExperiment [] kennel = { new AnimalExperiment(), new Dog(), new AnimalExperiment()};
 		
-		for(Animal ani : kennel){
+		for(AnimalExperiment ani : kennel){
 			ani.makeNoise();
 			if(ani instanceof Dog){
 				((Dog)ani).playDead();
 			}
 		}
-		Animal ani = new Animal();
+		AnimalExperiment ani = new AnimalExperiment();
 		
 		Dog d = (Dog) ani;
 		/*

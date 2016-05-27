@@ -1,6 +1,6 @@
 package experiments;
 
-public class Animal {
+public class AnimalExperiment {
 	public void makeNoise(){
 		System.out.println("Animal Noise ");
 	}

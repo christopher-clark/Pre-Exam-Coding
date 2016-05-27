@@ -1,5 +1,4 @@
 package experiments;
-
 import chapter2.*;
 
 public class Arrays {
@@ -9,10 +8,14 @@ public class Arrays {
 		Horse horse = new Horse();
 		Frog frog = new Frog();
 		Cow cow = new Cow();
-		Animal[] farm = {ani,horse,frog,cow};
+
+		if(cow instanceof AnimalExperiment)
+			System.out.println("Frog IS AN ANIMAL");
+		frog.makeNoise();
+				Animal[] farm = {ani,horse,cow,frog};
 		
 		for(Animal an : farm){
-			System.out.println(an);
+			an.makeNoise();
 		}
 	}
 

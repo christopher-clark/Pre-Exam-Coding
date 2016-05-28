@@ -9,7 +9,8 @@ public class ConditionTesting {
 		//testIfElse();
 		//for(int i = 0 ; i < 9;i++,switchTest(i));
 		//sTest();
-		switchChar();
+		//switchChar();
+		switchTest();
 	}
 	public static void testIf(){
 		int x = 1;
@@ -44,23 +45,24 @@ public class ConditionTesting {
 		else
 			System.out.println("Random > 3 " + rand);
 	}
-	public static void switchTest(int i){
+
+	public static void switchTest(){
 		String test = names[(int) (Math.random() * names.length)];
 		
 		switch(test){
 			case "Chris": 
 			{
-				System.out.println("Chris " + test + " i = " + i);
+				System.out.println("Chris " + test );
 				break;
 			}
 			default : 
 			{
-				System.out.println("Not Chris or Georgie " + test + " i = " + i);
+				System.out.println("Not Chris or Georgie ");
 				break;
 			}
 			case "Georgie": 
 			{
-				System.out.println("Georgie " + test + " i = " + i);
+				System.out.println("Georgie " + test );
 				break;
 			}
 			

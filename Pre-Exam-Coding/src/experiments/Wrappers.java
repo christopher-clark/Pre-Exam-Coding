@@ -7,16 +7,25 @@ public class Wrappers {
 	public static void main(String[] args) {
 	//intToPrim();
 //	stringToWrap("1024123423");
-	stringToWrap("F1",16);
-	stringToWrap("F1",16);
-	stringToPrim("FF",16);
+	//stringToWrap("F1",16);
+	//stringToWrap("F1",16);
+	//stringToPrim("FF",16);
+	
 	
 	Integer intWrap = Integer.valueOf("ffff",16);
 	if(intWrap instanceof Integer){
 	System.out.println("intWrap Integer = " + intWrap);
 	
+	int i = intWrap.intValue();
+	System.out.println("int primitive from intWrap.intValue = " + i);
+	
 	long l = Long.parseLong("110000",2);
 	System.out.println("long primitive from Long.parseLong(\"110000\",2) = " + l);
+	}
+	Long longWrapped = Long.valueOf("123456");
+	if(longWrapped instanceof Long){
+		System.out.println("Long Wrapper from Long.valueOf \"123456\" = " + longWrapped);
+			
 	}
 	
 	

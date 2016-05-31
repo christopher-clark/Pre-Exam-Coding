@@ -6,22 +6,21 @@ class Emu {
 		try {
 			throw new Exception();
 		} 
-		catch (Exception e) 
-		{
+		catch (Exception e) {
 			try {
 				try { throw new Exception();
 				} 
 				catch (Exception ex) { 
-					s += "ic "; 
+				s += "ic "; 
 				}
 				throw new Exception(); 
-		}
+			}
 			catch (Exception x) { 
 				s += "mc "; 
-		}
-		finally { 
+			}
+			finally { 
 			s += "mf "; 
-		}
+			}
 		} 
 		finally 
 		{ 

@@ -3,11 +3,8 @@ import java.io.*;
 import java.util.*;
 import java.util.regex.*;
 
-
-
 public class Regex {
 	
-	private static File myFile;
 	private static String readline = "";
 	
 	public static void main(String[] args) {

@@ -17,6 +17,7 @@ public class StringSplit {
 			
 			for(String s : tokens)
 				System.out.println(">" + s + "<");
+			
 		} catch(IOException ioe){
 			ioe.printStackTrace();
 		}

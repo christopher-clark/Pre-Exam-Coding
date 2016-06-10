@@ -14,11 +14,14 @@ public class TestSer {
 		
 		System.out.print(++SpecialSerial.z + " ");
 		ObjectInputStream is = new ObjectInputStream(
-		new FileInputStream("myFile"));
+		new FileInputStream("C:\\SCJP\\SerialisedObjects\\myFile"));
 		SpecialSerial s2 = (SpecialSerial)is.readObject();
 		is.close();
 		
 		System.out.println(s2.y + " " + SpecialSerial.z);
-	} catch (Exception x) {System.out.println("exc"); }
+	} catch (Exception x){
+		System.out.println("exc"); 
+		x.printStackTrace();
+		}
 	}
 }

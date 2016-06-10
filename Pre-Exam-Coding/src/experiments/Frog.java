@@ -3,23 +3,13 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class Cow extends Animal implements Serializable {
+public class Frog extends Animal implements Serializable {
 	
 	public String name;
 	public transient Bell bell;
 	public static String town;
-	public boolean equals(Object o){
-		if((o instanceof Cow) && ((Cow)(o.name) == this.name))){
-			return true;
-		else
-			return false;
-		}
-	}
 	
-	public Cow(){
-		super();
-	}
-	public Cow(String town){
+	public Frog(String town){
 		this.town = town;
 	}
 		

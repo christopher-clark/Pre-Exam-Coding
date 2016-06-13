@@ -1,26 +1,54 @@
 package experiments;
 import java.io.ObjectInputStream;
+import java.util.*;
+
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class Cow extends Animal implements Serializable {
+public class Cow  implements Serializable, Comparable<Cow> {
 	
-	public String name;
+	private static final long serialVersionUID = 10000121L;
+	
+	
+	private String country;
+	private String name;
+	private String breed;
+	private int weight;
+	
+	public int getWeight() {
+		return weight;
+	}
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+	public String getBreed() {
+		return breed;
+	}
+	public void setBreed(String breed) {
+		this.breed = breed;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
 	public transient Bell bell;
 	public static String town;
 	public boolean equals(Object o){
-		if((o instanceof Cow) && ((Cow)(o.name) == this.name))){
+		if((o instanceof Cow) && (((Cow)o).getName() == this.name))
 			return true;
 		else
 			return false;
-		}
 	}
-	
+	public int compareTo(Cow cow){
+		return name.compareTo(cow.getName());
+	}
 	public Cow(){
 		super();
 	}
-	public Cow(String town){
-		this.town = town;
+	public Cow(String name){
+		this.name = name;
 	}
 		
 	public Bell getBell() {
@@ -62,5 +90,5 @@ public class Cow extends Animal implements Serializable {
 		bell = new Bell(is.readInt());
 		} catch (Exception e) { e.printStackTrace(); }
 	}
-	
+		
 }

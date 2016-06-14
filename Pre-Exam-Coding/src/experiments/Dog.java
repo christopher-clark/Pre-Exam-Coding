@@ -43,4 +43,7 @@ public class Dog  implements Comparable<Dog> {
 	public void playDead(){
 		System.out.println("Playing dead ");
 	}
+	public void checkup() { // implement Bird-specific code
+		System.out.println("Dog checkup");
+		}
 }

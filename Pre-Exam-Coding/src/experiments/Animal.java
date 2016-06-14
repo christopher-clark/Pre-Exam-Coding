@@ -37,5 +37,7 @@ public class Animal implements Comparable<Animal> {
 	public void makeNoise(){
 		System.out.println("Animal noise ");
 	}
-	
+	public void checkup() { // implement Bird-specific code
+		System.out.println("Animal checkup");
+		}
 }

@@ -9,8 +9,11 @@ public class Frog extends Animal implements Serializable {
 	public transient Bell bell;
 	public static String town;
 	
-	public Frog(String town){
-		this.town = town;
+	public Frog(){
+	}
+	public Frog(String name){
+		super(name);
+		this.name = name;
 	}
 		
 	public Bell getBell() {
@@ -51,6 +54,12 @@ public class Frog extends Animal implements Serializable {
 		is.defaultReadObject(); // 5
 		bell = new Bell(is.readInt());
 		} catch (Exception e) { e.printStackTrace(); }
+	}
+	public void feedMe(){
+		System.out.println("Feed me Water Lilies");
+	}
+	public void showName(){
+		System.out.println("My name is " + this.name);
 	}
 	
 }

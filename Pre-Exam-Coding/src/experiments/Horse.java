@@ -33,4 +33,7 @@ public class Horse extends Animal{
 	public void makeNoise(){
 			System.out.println("Feed me Hay !!! ");
 	}
+	public void feedMe(){
+		System.out.println("Feed me Hay");
+	}
 }

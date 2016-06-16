@@ -1,5 +1,7 @@
 package experiments;
 
+import experiments.OuterInner.InnerClass;
+
 public class PolyArray {
 
 	public static void main(String[] args) {
@@ -24,6 +26,16 @@ public class PolyArray {
 			}
 		}
 		c.makeNoise();
+		
+		OuterInner outerInstance = new OuterInner();
+		
+		// create new InnerClass reference by dotting Outer.Inner instance 
+		OuterInner.InnerClass innerClass = outerInstance.new InnerClass();
+		innerClass.showOuterXsquared();
+		
+		// Create in one line
+		OuterInner.InnerClass  innercubed =  new OuterInner().new InnerClass();
+		innercubed.showOuterXcubed();
 		
 	}
 }

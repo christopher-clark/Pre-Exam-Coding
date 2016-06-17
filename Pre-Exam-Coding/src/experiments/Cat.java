@@ -20,4 +20,10 @@ public class Cat extends Animal{
 	public Cat(String name){
 		super(name);
 	}
+	public void miew(){
+		System.out.println("Miew");
+	}
+	public void makeNoise(){
+		System.out.println("Cat noise ");
+	}
 }

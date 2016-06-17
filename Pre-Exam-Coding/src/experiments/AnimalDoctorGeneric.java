@@ -12,7 +12,7 @@ public class AnimalDoctorGeneric {
 	public void addAnimal(List<? super Donkey> animals){
 		animals.add(new Donkey());
 		Animal an = new Animal("Pet Animal");
-		animals.add(an);
+		//animals.add(an);
 	}
 	public void showArrayList(ArrayList<Animal> animals){
 		System.out.println("Animals contains " + animals);

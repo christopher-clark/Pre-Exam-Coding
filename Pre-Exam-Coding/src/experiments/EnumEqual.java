@@ -11,10 +11,5 @@ public class EnumEqual {
 		if(t1.equals(t2)){
 			System.out.println(" t1.equals(t2)");
 		}
-		Dog d = new Dog();
-		if(d instanceof AnimalExperiment){
-			System.out.println(" dog is an Animal ");
-		}
-			
 	}
 }

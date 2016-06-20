@@ -4,12 +4,17 @@ public class TestMain {
 
 	public static void main(String[] args) {
 		// Create Outer Class reference
-		TestInner ti = new TestInner();
-		ti.callinner();
+		BasicInner bi = new BasicInner();
 		
 		// Create ref to Inner via Outer.Inner and call new on Instance of Outer
-		TestInner.Inner in = ti.new Inner();
-		in.showX();
+		BasicInner.Iclass inner = bi.new Iclass();
+		inner.print();
+		
+		System.out.print("\n");
+		
+		MethodInner mi = new MethodInner();
+		mi.callInner();
+		
 	}
 
 }

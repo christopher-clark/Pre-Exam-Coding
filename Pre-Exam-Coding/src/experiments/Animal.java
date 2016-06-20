@@ -46,4 +46,9 @@ public class Animal implements Comparable<Animal> {
 	public void feedMe(){
 		System.out.println("Feed me Animal Food");
 	}
+	Animal doStuff(int i){
+		System.out.println("Animal doStuff returning an Animal Object");
+		Animal a = new Animal();
+		return a;
+	}
 }

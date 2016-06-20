@@ -13,6 +13,7 @@ public class City {
 		new City().go();
 	}
 	void go() throws Exception { 
-		new TimesSquare().doStuff(); 
+	//new TimesSquare().doStuff(); 
+		new Manhattan().doStuff();
 	}
  }

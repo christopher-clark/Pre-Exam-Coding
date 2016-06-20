@@ -26,4 +26,9 @@ public class Cat extends Animal{
 	public void makeNoise(){
 		System.out.println("Cat noise ");
 	}
+	Animal doStuff(int i){
+		int s = 7;
+		return new Cat();
+	}
+	
 }

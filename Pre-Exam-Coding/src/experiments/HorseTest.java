@@ -1,6 +1,7 @@
 package experiments;
 
 public class HorseTest {
+	
 	 public static void main(String[] args) {
 		 class Horse {
 			 public String name;

@@ -23,13 +23,19 @@ public class ContinueTest {
 		}
 	}
 	public static void continueLoop(){
-		
+	
+		outer:
+			
 		for(int j = 0; j < names.length;j++){
 			System.out.println("J = " + j);
 			
+			
 			// loop x number of times and see if the name is Paul		
 			for(int i = 0; i < names.length;i++){
-				String guessName = names[(int) (Math.random() * names.length)];
+				if(i == 3)
+					continue outer;
+				System.out.println("\tInner I = " + i);
+				/*String guessName = names[(int) (Math.random() * names.length)];
 				System.out.println(guessName);
 				if(guessName.equals(names[i])){
 					System.out.println("\t I = " + i);
@@ -38,7 +44,7 @@ public class ContinueTest {
 				}
 				else {
 					System.out.println("No Match, I = " + i);
-				}
+				}*/
 			}
 		}
 	}

@@ -19,9 +19,9 @@ class Emu {
 			catch (Exception x) { 
 				s += "mc "; 
 		}
-		finally { 
-			s += "mf "; 
-		}
+			finally { 
+				s += "mf "; 
+			}
 		} 
 		finally 
 		{ 

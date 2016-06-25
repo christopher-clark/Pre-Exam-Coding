@@ -16,8 +16,10 @@ class Plane {
 		}
 	}
 	void s2() throws Exception {
-		s3(); s += "2";
-		s3(); s += "2b";
+		s3(); 
+		s += "2";
+		s3(); 
+		s += "2b";
 	}
 	void s3() throws Exception {
 		throw new Exception();

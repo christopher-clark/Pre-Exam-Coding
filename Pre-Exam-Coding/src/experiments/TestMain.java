@@ -2,6 +2,8 @@ package experiments;
 
 public class TestMain {
 
+	static char[] alphabet = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+
 	public static void main(String[] args) {
 		/*// Create Outer Class reference
 		BasicInner bi = new BasicInner();
@@ -60,9 +62,22 @@ public class TestMain {
 		//if(iValue instanceof Integer)
 		//	System.out.println("iValue is an Integer " + iValue);
 		
-		Float f = Float.valueOf("12.0232");
+		/*Float f = Float.valueOf("12.0232");
 		if(f instanceof Float)
-			System.out.println("f is a Float " + f);
+			System.out.println("f is a Float " + f);*/
+		
+		// Create Outer Class
+		/*OutAndIn oai = new OutAndIn();
+		//oai.displayRand();
+		// Create a Outer.Inner var = outer.new Inner()
+		OutAndIn.FindMe findme = oai.new FindMe();
+		findme.showRand();*/
+		
+		while(true){
+			char ch = alphabet[(int) (Math.random() * alphabet.length)];
+			System.out.println(ch );
+		}
+		
 	}
 	public void loop(){
 		 loop();

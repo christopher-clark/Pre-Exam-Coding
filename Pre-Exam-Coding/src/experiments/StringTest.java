@@ -1,12 +1,34 @@
 package experiments;
 
 public class StringTest {
-	static String s = "String Instance variable";
-	static int i = 100;
+	
 	public static void main(String[] args) {
 	
-		System.out.println("StringTest + String = " + s + "u");
-		System.out.println("StringTest + int = " + (i + 199));
+		/*String s2 = "summer";
+		
+		System.out.println(s2);
+		
+		s2 = s2.replaceAll("su", "xx");
+		
+		if(s2.contains("xx"))
+			s2 = s2.replace("xxmmer", "new");
+		
+		s2 = s2.concat("kladsfalywryhhhdsfasffadf");
+		
+		StringBuffer sb = new StringBuffer(s2);
+		System.out.println("Index of hhh is " + sb.indexOf("hhh"));
+		
+		System.out.println(s2);
+		
+		StringBuilder sbnew = new StringBuilder("abc").append("def").reverse().insert(3, "---");
+		System.out.println( sbnew )*/;
+
+		StringBuilder sb4 = new StringBuilder("01234567");
+		StringBuilder sb55 = (sb4.insert(4, "---"));
+		System.out.println( sb55.append("HELP"));
+		
+	}
+	public void equalityTest(){
 		
 		String s = "String";
 		String s2 = "String";

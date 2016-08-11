@@ -18,7 +18,7 @@ public class LocaleTest {
 		
 		System.out.println("date in french is " + df.format(date));
 		
-		System.out.println("currency in US is " + nf.format(100));
+		System.out.println("currency in UK is " + nf.format(100));
 
 
 	}

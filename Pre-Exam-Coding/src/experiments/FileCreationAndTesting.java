@@ -8,16 +8,23 @@ public class FileCreationAndTesting {
 	
 	static private File file;
 	static private boolean fileExists = false;
-	
-	private final String path = "C:\\SCJP\\SourceData";
+	static private String fileName;
+	static private final String path = "C:\\SCJP\\SourceData\\";
 	
 	public static void main(String[] args) {
 		
-		file = new File(randomFilename());
+		fileName = randomFilename();
+		file = new File(path + fileName);
 		fileExists = file.exists();
-		System.out.println("Does File exist ? " + fileExists);
+		System.out.println("Does File exist ? " + file.exists());
 		System.out.println(file.getName());
-
+		try{
+			file.createNewFile();
+			System.out.println(file.getName());
+			System.out.println("Does File exist Now ? " + file.exists());
+		} catch(IOException ioe){
+			ioe.printStackTrace();
+		}
 	}
 	private static String randomFilename(){
 		
